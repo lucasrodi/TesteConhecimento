@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lutha\\Desktop\\Aranha\\teste\\teste\\teste.csproj": {}
+    "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\teste\\teste\\teste.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lutha\\Desktop\\Aranha\\teste\\teste\\teste.csproj": {
+    "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\teste\\teste\\teste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lutha\\Desktop\\Aranha\\teste\\teste\\teste.csproj",
+        "projectUniqueName": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\teste\\teste\\teste.csproj",
         "projectName": "teste",
-        "projectPath": "C:\\Users\\lutha\\Desktop\\Aranha\\teste\\teste\\teste.csproj",
+        "projectPath": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\teste\\teste\\teste.csproj",
         "packagesPath": "C:\\Users\\lutha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lutha\\Desktop\\Aranha\\teste\\teste\\obj\\",
+        "outputPath": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\teste\\teste\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lutha\\AppData\\Roaming\\NuGet\\NuGet.Config",

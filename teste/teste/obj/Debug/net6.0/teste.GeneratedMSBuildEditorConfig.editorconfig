@@ -8,77 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = teste
 build_property.RootNamespace = teste
-build_property.ProjectDir = C:\Users\lutha\Desktop\Aranha\teste\teste\
+build_property.ProjectDir = C:\Users\lutha\Desktop\Aranha\TesteConhecimento\teste\teste\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lutha\Desktop\Aranha\teste\teste
+build_property.MSBuildProjectDirectory = C:\Users\lutha\Desktop\Aranha\TesteConhecimento\teste\teste
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Empresa/Cadastrar.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Empresa/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Empresa/FornecedoresComCnpj.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Empresa/FornecedoresComCnpj.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxGb3JuZWNlZG9yZXNDb21DbnBqLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Empresa/FornecedoresComCpf.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Empresa/FornecedoresComCpf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxGb3JuZWNlZG9yZXNDb21DcGYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Empresa/Index.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Empresa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/CadastrarComCnpj.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/CadastrarComCnpj.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxDYWRhc3RyYXJDb21DbnBqLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/CadastrarComCpf.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/CadastrarComCpf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxDYWRhc3RyYXJDb21DcGYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/Error.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/FornecedorComCnpj.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/FornecedorComCnpj.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxGb3JuZWNlZG9yQ29tQ25wai5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/FornecedorComCpf.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/FornecedorComCpf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxGb3JuZWNlZG9yQ29tQ3BmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/Index.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Fornecedor/MenorDeIdade.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Fornecedor/MenorDeIdade.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxNZW5vckRlSWRhZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Home/Index.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Shared/Error.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/_ViewImports.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/_ViewStart.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lutha/Desktop/Aranha/teste/teste/Views/Shared/_Layout.cshtml]
+[C:/Users/lutha/Desktop/Aranha/TesteConhecimento/teste/teste/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7tmrz26wf7

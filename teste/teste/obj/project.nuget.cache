@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nqVADX9SkREEM2KGc7JCnd99V7WH4fDl+VVL5aldRyFPxV8Q9Kf5moIA1KQlbv7ErFV46TyDZmLQIAwki7bFEA==",
+  "dgSpecHash": "ODjWLPmUCu3FEcx+Gw7WOcvbgIhzFQZCmueYiQ7xSAsAU7+wK6BxJewwVVeh8J6Juq3U8cMEf26fnBtZZe8iNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lutha\\Desktop\\Aranha\\teste\\teste\\teste.csproj",
+  "projectFilePath": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\teste\\teste\\teste.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lutha\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lutha\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
