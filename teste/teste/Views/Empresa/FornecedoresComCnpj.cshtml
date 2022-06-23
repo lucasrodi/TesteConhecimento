@@ -1,0 +1,18 @@
+﻿@model List<FornecedorComCnpj>
+@{
+    ViewData["Title"] = "Fornecedores";
+}
+@if(Model!=null){
+    foreach(var fornecedor in Model)
+    {
+        <p>@fornecedor.Nome</p>
+    }
+}
+@if (Model==null)
+{
+    <form asp-action="FornecedoresComCnpj" asp-controller="Empresa" method="post" >
+    <label>Digite o Cnpj</label>
+    <input type="text" name="Cnpj" placeholder="Digite o cnpj do seu fornecedor aqui"/>
+    <input type="submit" value="Procurar"/>
+</form>
+}

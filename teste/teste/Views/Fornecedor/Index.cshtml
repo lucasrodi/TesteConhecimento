@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Encontre uma empresa";
+}
+<h1>Olá</h1>
+<form asp-action="Index" asp-controller="Fornecedor" method="post">
+     <label > esta cadastrado com</label>
+            <select name="Cadastro" id="Fornecedor">
+            <option value="">Selecione cpf ou cnpj</option>
+            <option value="Cpf">cpf</option>
+            <option value="Cnpj">cnpj</option>
+            </select>
+    <input type="submit" value="Buscar" />
+</form>
+
+<form asp-action="Cadastrar" asp-controller="Fornecedor" method="post">
+    <h2>Ainda Não possui cadastro</h2>
+            <label id="Cadastro">Cadastrar com</label>
+            <select name="Cadastro" id="Fornecedor">
+            <option value="">Selecione cpf ou cnpj</option>
+            <option value="Cpf">cpf</option>
+            <option value="Cnpj">cnpj</option>
+            </select>
+            <input type="submit" value="Cadastrar"/>
+</form>

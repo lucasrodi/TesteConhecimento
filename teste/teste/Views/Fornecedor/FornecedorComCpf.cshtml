@@ -1,0 +1,19 @@
+﻿@model teste.Models.FornecedorComCpf
+@{
+    ViewData["Title"] = "Fornecedor";
+}
+@if (Model == null)
+{
+    <form asp-action="FornecedorComCpf" asp-controller="Fornecedor" method="post">
+    <label for="Cpf" > Digite seu cpf </label>
+    <input id="Cpf" name="Cpf" type="text" placeholder="digite seu cpf aqui"/>
+    <input type="submit" value="Procurar" />
+</form>
+}
+
+@if(Model != null){
+    <p>@Model.Nome</p>
+    <p>@Model.Cpf</p>
+    <p>@Model.DataNascimento</p>
+    <p>@Model.NomeEmpresa</p>
+}
