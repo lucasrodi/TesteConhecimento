@@ -1,12 +1,23 @@
 import React from 'react';
 import './App.css';
-import { GetAll } from './Components/GetAllFilmes/GetAllFilmes';
+import { Routes, Route } from "react-router-dom";
+import { PaginaInicial } from "./Components/PaginaInicial"
+import { GetAll } from './Components/GetFilmes/GetAll';
+import { BuscarFilme } from './Components/GetFilmes/BuscarFilme';
+import { AddFilme } from './Components/AddFilme/AddFilme';
+import { RemoveFilme } from './Components/RemoveFilme/RemoveFilme';
+import { UpdateFilme } from './Components/UpdateFilme/UpdateFilme';
 
 function App() {
   return (
-    <div className="App">
-      <GetAll />
-    </div>
+    <Routes>
+      <Route path='/' element={<PaginaInicial />} />
+      <Route path='TodosOsFilmes' element={<GetAll />} />
+      <Route path='BuscarFilme' element={<BuscarFilme />} />
+      <Route path='AdicionarFilme' element={<AddFilme />} />
+      <Route path='RemoverFilme' element={<RemoveFilme />} />
+      <Route path='AtualizarFilme' element={<UpdateFilme />} />
+    </Routes>
   );
 }
 
