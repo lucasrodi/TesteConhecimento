@@ -1,0 +1,18 @@
+.titulo__Buscar--Filme {
+    margin: 10px;
+}
+
+.label {
+    margin: 5px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.buscar {
+    background-color: rgb(55, 109, 224);
+    border: white solid;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+}

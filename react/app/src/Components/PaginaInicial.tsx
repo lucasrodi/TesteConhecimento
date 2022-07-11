@@ -7,9 +7,7 @@ export function PaginaInicial() {
         <div className="container">
             <Link className="link" to="TodosOsFilmes">Ver todos os Filmes</Link>
             <Link className="link" to="AdicionarFilme">Adicionar Filme</Link>
-            <Link className="link" to="RemoverFilme">Remover Filme</Link>
             <Link className="link" to="BuscarFilme">Buscar Filme</Link>
-            <Link className="link" to="AtualizarFilme">Atualizar Filme</Link>
         </div>
     );
 }

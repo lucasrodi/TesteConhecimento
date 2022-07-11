@@ -43,7 +43,7 @@ namespace Api.Controllers
         }
         [HttpGet]
         [Route("FilmeId")]
-        public Filme FilmeId(int id)
+        public Filme FilmeId( int id)
         {
            var filme = filmeId.Filme(id);
             if (filme == null)
@@ -54,15 +54,17 @@ namespace Api.Controllers
         }
         [HttpDelete]
         [Route("RemoveFilme")]
-        public Filme RemoveFilme(int id)
+        public ActionResult<Filme> RemoveFilme( string nome )
         {
-            removeFilme.Remove(id);
-            var filme = filmeId.Filme(id);
-            return filme;
+            removeFilme.Remove(nome);
+            return Ok();
         }
         [HttpPut]
         [Route("UpdateFilme")]
-        public  Filme UpdateFilme(int id,string nome, string duracao, string genero)
+        public  Filme UpdateFilme(int id,
+             string nome,
+             string duracao, 
+             string genero)
         {
            updateFilme.Atualiza(id,nome,duracao,genero);
             var filme = filmeId.Filme(id);
@@ -70,7 +72,9 @@ namespace Api.Controllers
         }
         [HttpPost]
         [Route("AddFilme")]
-        public Filme AddFilme(string nome, string duracao, string genero)
+        public Filme AddFilme( string nome,
+            string duracao,
+            string genero)
         {
            addFilme.Add(nome, duracao, genero);
             var filme = filmeNome.GetFilme(nome);

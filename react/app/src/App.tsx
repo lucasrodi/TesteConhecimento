@@ -5,7 +5,6 @@ import { PaginaInicial } from "./Components/PaginaInicial"
 import { GetAll } from './Components/GetFilmes/GetAll';
 import { BuscarFilme } from './Components/GetFilmes/BuscarFilme';
 import { AddFilme } from './Components/AddFilme/AddFilme';
-import { RemoveFilme } from './Components/RemoveFilme/RemoveFilme';
 import { UpdateFilme } from './Components/UpdateFilme/UpdateFilme';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Route path='TodosOsFilmes' element={<GetAll />} />
       <Route path='BuscarFilme' element={<BuscarFilme />} />
       <Route path='AdicionarFilme' element={<AddFilme />} />
-      <Route path='RemoverFilme' element={<RemoveFilme />} />
       <Route path='AtualizarFilme' element={<UpdateFilme />} />
     </Routes>
   );
