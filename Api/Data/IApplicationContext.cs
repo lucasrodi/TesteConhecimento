@@ -6,5 +6,6 @@ namespace Api.Data
     public interface IApplicationContext
     {
         DbSet<Filme> Filmes { get; set; }
+        public  int SaveChanges();
     }
 }

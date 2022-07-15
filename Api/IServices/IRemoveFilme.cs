@@ -2,6 +2,6 @@
 {
     public interface IRemoveFilme
     {
-        public void Remove(string nome);
+        public void Remove(int id);
     }
 }

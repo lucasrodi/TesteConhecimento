@@ -14,7 +14,7 @@ function App() {
       <Route path='TodosOsFilmes' element={<GetAll />} />
       <Route path='BuscarFilme' element={<BuscarFilme />} />
       <Route path='AdicionarFilme' element={<AddFilme />} />
-      <Route path='AtualizarFilme' element={<UpdateFilme />} />
+      <Route path='TodosOsFilmes/AtualizarFilme/:id' element={<UpdateFilme />} />
     </Routes>
   );
 }

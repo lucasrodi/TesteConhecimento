@@ -3,7 +3,6 @@ using Api.IServices;
 using Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -15,17 +14,21 @@ builder.Services.AddTransient<IAddFilme, AddFilme>();
 builder.Services.AddTransient<IGetFilmeId, GetFilmeId>();
 builder.Services.AddTransient<IGetAllFilme, GetAllFilme>();
 builder.Services.AddTransient<IRemoveFilme, RemoveFilme>();
-builder.Services.AddTransient<IUpdateFilme,UpdateFilme>();
-builder.Services.AddTransient<IGetFilmeNome, GetFilmeNome>();
+builder.Services.AddTransient<IUpdateFilme, UpdateFilme>();
 
+builder.Services.AddCors();
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
+app.UseCors(opt=> opt
+.AllowAnyOrigin()
+.AllowAnyMethod()
+.AllowAnyHeader());
 
 app.UseHttpsRedirection();
 

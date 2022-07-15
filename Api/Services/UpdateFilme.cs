@@ -24,6 +24,7 @@ namespace Api.Services
             filme.Duracao = duracao;
             filme.Genero = genero;
             context.Filmes.Update(filme);
+            context.SaveChanges();
         }
     }
 }

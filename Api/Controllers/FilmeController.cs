@@ -1,4 +1,5 @@
-﻿using Api.IServices;
+﻿using Api.Data;
+using Api.IServices;
 using Api.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,72 +14,104 @@ namespace Api.Controllers
         IRemoveFilme removeFilme;
         IUpdateFilme updateFilme;
         IAddFilme addFilme;
-        IGetFilmeNome filmeNome;
+
 
         public FilmeController(
             IGetAllFilme allFilmes,
             IGetFilmeId filmeId,
             IRemoveFilme removeFilme,
             IUpdateFilme updateFilme,
-            IAddFilme addFilme,
-            IGetFilmeNome filmeNome)
+            IAddFilme addFilme)
         {
             this.allFilmes = allFilmes;
             this.filmeId = filmeId;
             this.removeFilme = removeFilme;
             this.updateFilme = updateFilme;
             this.addFilme = addFilme;
-            this.filmeNome = filmeNome;
         }
         [HttpGet]
         [Route("AllFilmes")]
-        public List<Filme> AllFilmes()
+        public ActionResult<List<Filme>> AllFilmes()
         {
-           var filme = allFilmes.Filmes();
-            if (filme == null)
+            try
             {
-                return null;
+                var filme = allFilmes.Filmes();
+                return Ok(filme);
+
             }
-            return filme;
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
         [HttpGet]
         [Route("FilmeId")]
-        public Filme FilmeId( int id)
+        public ActionResult<Filme> FilmeId( 
+            int id)
         {
-           var filme = filmeId.Filme(id);
-            if (filme == null)
+            try
             {
-                return null;
+                var filme = filmeId.Filme(id);
+                return Ok(filme);
             }
-            return filme;
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
         [HttpDelete]
         [Route("RemoveFilme")]
-        public ActionResult<Filme> RemoveFilme( string nome )
+        public ActionResult<Filme> RemoveFilme(
+            int id )
         {
-            removeFilme.Remove(nome);
-            return Ok();
+            try
+            {
+                removeFilme.Remove(id);
+                return Ok();
+
+            }
+            catch (Exception e)
+            {
+              return BadRequest(e.Message);
+            }
         }
         [HttpPut]
         [Route("UpdateFilme")]
-        public  Filme UpdateFilme(int id,
+        public ActionResult<Filme> UpdateFilme(int id,
              string nome,
              string duracao, 
              string genero)
         {
-           updateFilme.Atualiza(id,nome,duracao,genero);
-            var filme = filmeId.Filme(id);
-            return filme;
+            try
+            {
+                updateFilme.Atualiza(id, nome, duracao, genero);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+                
+            }
         }
         [HttpPost]
         [Route("AddFilme")]
-        public Filme AddFilme( string nome,
+        public ActionResult<Filme> AddFilme(
+            string nome,
             string duracao,
             string genero)
         {
-           addFilme.Add(nome, duracao, genero);
-            var filme = filmeNome.GetFilme(nome);
-            return filme ;
+            try
+            {
+                addFilme.Add(nome, duracao, genero); 
+                return Ok();
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+          
+            
         }
     }
 }

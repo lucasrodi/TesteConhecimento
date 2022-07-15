@@ -18,6 +18,9 @@ namespace Api.Services
         public void Add(string nome,string duracao,string genero)
         {
            context.Filmes.Add(new Filme(nome, duracao, genero));
+           context.SaveChanges();
         }
+      
+       
     }
 }

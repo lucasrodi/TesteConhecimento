@@ -6,9 +6,9 @@ namespace Api.Services
     public class RemoveFilme:IRemoveFilme
     {
         IApplicationContext context;
-        IGetFilmeNome getFilme;
+        IGetFilmeId getFilme;
 
-        public RemoveFilme(IApplicationContext context, IGetFilmeNome getFilme)
+        public RemoveFilme(IApplicationContext context, IGetFilmeId getFilme)
         {
             this.context = context;
             this.getFilme = getFilme;
@@ -18,9 +18,11 @@ namespace Api.Services
 
         }
 
-        public void Remove(string nome)
+        public void Remove(int id)
         {
-            context.Filmes.Remove(getFilme.GetFilme(nome));
+            var filme = getFilme.Filme(id);
+            context.Filmes.Remove(filme);
+            context.SaveChanges();
         }
     }
 }
