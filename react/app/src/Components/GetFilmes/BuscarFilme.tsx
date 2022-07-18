@@ -1,13 +1,19 @@
-import { GetFilme } from "../../Api/ApiGet";
 import "../index.css"
 import "./GetFilmes.css"
-import { Filme } from "../../Models/Filme";
 import { useState } from "react";
+import Api from "../../Api/Api";
+import { Filme } from "../../Models/Filme";
 export function BuscarFilme() {
     const [id, setId] = useState("");
-    const [url, setUrl] = useState("");
-    const { data } = GetFilme<Filme>(url);
-
+    const [filme, setFilme] = useState<Filme>()
+    const GetFilmes = async () => {
+        try {
+            const response = await Api.get(`/FilmeId?id=${id}`)
+            setFilme(response.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <div className="container">
             <h1 className="titulo__Buscar--Filme">Filme</h1>
@@ -23,7 +29,7 @@ export function BuscarFilme() {
                 <button
                     onClick={(e) => {
                         e.preventDefault()
-                        setUrl(`https://localhost:7241/Api/Filme/FilmeId?id=${id}`)
+                        GetFilmes()
                     }}
                     className="buscar"
                     type="submit" name="Buscar"
@@ -32,14 +38,11 @@ export function BuscarFilme() {
             </form>
 
 
-            <p>{data?.nome}</p>
-            <p>{data?.duracao}</p>
-            <p>{data?.genero}</p>
-
-
+            <p>{filme?.nome}</p>
+            <p>{filme?.duracao}</p>
+            <p>{filme?.genero}</p>
 
 
         </div>
-
     );
 }

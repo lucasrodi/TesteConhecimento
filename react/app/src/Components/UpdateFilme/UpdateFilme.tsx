@@ -1,17 +1,27 @@
 import "../index.css"
 import "../AddFilme/AddFilme.css"
 import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import { PutFilme } from "../../Api/ApiPut"
-import { Filme } from "../../Models/Filme";
+import { useNavigate, useParams } from "react-router-dom";
+import Api from "../../Api/Api";
 export function UpdateFilme() {
     const [nome, setNome] = useState("")
     const [duracao, setDuracao] = useState("")
     const [genero, setGenero] = useState("")
-    let [searchParams, setSearchParams] = useSearchParams();
-    let id = searchParams.get("user");
-    const [url, setUrl] = useState("")
-    PutFilme<Filme>(url);
+    let { id } = useParams();
+    let navigate = useNavigate()
+    const PutFilme = async (e: any) => {
+        e.preventDefault()
+        try {
+            await Api.put(`UpdateFilme?id=${id?.replace("id=", "")}&nome=${nome}&duracao=${duracao}&genero=${genero}`)
+            setNome("")
+            setGenero("")
+            setDuracao("")
+            navigate("/")
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
 
         <div className="container">
@@ -45,10 +55,7 @@ export function UpdateFilme() {
                 />
                 <button
                     className="button"
-                    onClick={(e) => {
-                        e.preventDefault()
-                        setUrl(`https://localhost:7241/Api/Filme/UpdateFilme?id=${id}&nome=${nome}&duracao=${duracao}&genero=${genero}`)
-                    }}
+                    onClick={PutFilme}
                 >
                     Adicionar
                 </button>
@@ -56,3 +63,6 @@ export function UpdateFilme() {
         </div>
     );
 }
+
+
+

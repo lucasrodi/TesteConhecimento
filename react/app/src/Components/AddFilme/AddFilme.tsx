@@ -1,14 +1,25 @@
 import { useState } from "react";
-import { PostFilme } from "../../Api/ApiPost";
-import { Filme } from "../../Models/Filme";
+import { useNavigate } from "react-router-dom";
+import Api from "../../Api/Api";
 import "../index.css"
 import "./AddFilme.css"
 export function AddFilme() {
     const [nome, setNome] = useState("");
     const [duracao, setDuracao] = useState("");
     const [genero, setGenero] = useState("");
-    const [url, setUrl] = useState("");
-    PostFilme<Filme>(url)
+    let navigate = useNavigate()
+    const AddFilme = async (e: any) => {
+        e.preventDefault()
+        try {
+            await Api.post(`AddFilme?nome=${nome}&duracao=${duracao}&genero=${genero}`)
+            setNome("")
+            setGenero("")
+            setDuracao("")
+            navigate("/")
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <div className="container">
             <h1 className="titulo">Adicionar Filme</h1>
@@ -42,10 +53,7 @@ export function AddFilme() {
                     placeholder="Digite o gênero do filme"
                     value={genero} onChange={(e) => { setGenero(e.target.value) }}
                 />
-                <button onClick={(e) => {
-                    e.preventDefault()
-                    setUrl(`https://localhost:7241/Api/Filme/AddFilme?nome=${nome}&duracao=${duracao}&genero=${genero}`)
-                }} className="button" >Adicionar</button>
+                <button onClick={AddFilme} className="button" >Adicionar</button>
             </form>
 
         </div>
