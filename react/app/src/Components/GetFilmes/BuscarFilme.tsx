@@ -10,6 +10,7 @@ export function BuscarFilme() {
         try {
             const response = await Api.get(`/FilmeId?id=${id}`)
             setFilme(response.data)
+            console.log("f")
         } catch (error) {
             console.log(error)
         }
@@ -38,9 +39,9 @@ export function BuscarFilme() {
             </form>
 
 
-            <p>{filme?.nome}</p>
-            <p>{filme?.duracao}</p>
-            <p>{filme?.genero}</p>
+            <p><strong>nome:</strong> {filme?.nome}</p>
+            <p><strong>duração:</strong> {filme?.duracao}</p>
+            <p><strong>gênero:</strong> {filme?.genero}</p>
 
 
         </div>

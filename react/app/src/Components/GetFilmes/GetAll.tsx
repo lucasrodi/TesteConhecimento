@@ -10,6 +10,7 @@ export function GetAll() {
         ['filme'], async () => {
             try {
                 const response = await Api.get("/AllFilmes")
+                console.log("f")
                 return response.data
             } catch (error) {
                 return console.log(error)
@@ -33,6 +34,7 @@ export function GetAll() {
                             </Link>
                             <button onClick={async () => {
                                 try {
+                                    console.log("f")
                                     await Api.delete(`/RemoveFilme?id=${repo.id}`)
                                     navigate("/")
                                 } catch (error) {

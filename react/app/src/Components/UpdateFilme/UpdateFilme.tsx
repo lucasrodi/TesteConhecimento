@@ -13,6 +13,7 @@ export function UpdateFilme() {
         e.preventDefault()
         try {
             await Api.put(`UpdateFilme?id=${id?.replace("id=", "")}&nome=${nome}&duracao=${duracao}&genero=${genero}`)
+            console.log("f")
             setNome("")
             setGenero("")
             setDuracao("")
