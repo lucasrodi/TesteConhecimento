@@ -6,6 +6,7 @@ Trata-se de um site aonde o usuario pode ver uma lista de filmes, tambem pode ad
 <h2> front-end</h2>
 <ul>
 <li>React(Typescript)</li>
+<li>React Router Dom v6</li>
 <li>Axios</li>
 <li>ReactQuery</li>
 </ul>
