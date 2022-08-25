@@ -16,3 +16,5 @@ Trata-se de um site aonde o usuario pode ver uma lista de filmes, tambem pode ad
 <li>Entity Framework Core</li>
 <li>Sql server(banco de dados)</li>
 </ul>
+<h2>Maui</h2>
+<p>Aplicativo funicionando em Android,Ios,Mac,Windows
