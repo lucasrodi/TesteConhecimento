@@ -4,7 +4,6 @@ C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Api.exe
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Api.deps.json
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Api.runtimeconfig.json
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Api.dll
-C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\ref\Api.dll
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Api.pdb
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
@@ -59,3 +58,4 @@ C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\obj\Debug\net6.0\Api.dll
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\obj\Debug\net6.0\ref\Api.dll
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\obj\Debug\net6.0\Api.pdb
 C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\obj\Debug\net6.0\Api.genruntimeconfig.cache
+C:\Users\lutha\Desktop\Aranha\TesteConhecimento\Api\obj\Debug\net6.0\refint\Api.dll

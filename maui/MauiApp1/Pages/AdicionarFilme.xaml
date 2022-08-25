@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.AdicionarFilme"
+             Title="Adicionar Filme">
+    <VerticalStackLayout
+        Margin="40"
+        VerticalOptions="Center">
+        <Label 
+            Text="Adicionar Filme"
+            FontSize="22"
+             Padding="50"
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Padding="10">
+            <Label Text="Nome Do Filme"
+                   FontSize="18"/>
+            <Editor
+                x:Name="Nome"
+                Placeholder="Digite o nome do filme "
+                />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Padding="10">
+            <Label Text="Duração Do Filme"
+                   FontSize="18"
+                  />
+            <Editor
+                x:Name="Duracao"
+                Placeholder="Digite o duração do filme "/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Padding="10">
+            <Label Text="Genêro Do Filme"
+                   FontSize="18"/>
+            <Editor
+                x:Name="Genero"
+                Placeholder="Digite o genêro do filme "/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Padding="30">
+            <Button
+              Clicked="Enviar"
+            Text="Adicionar"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

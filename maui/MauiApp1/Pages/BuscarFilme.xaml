@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.BuscarFilme"
+             Title="Buscar Filme">
+    <VerticalStackLayout
+        Margin="40"
+        VerticalOptions="Center">
+        <Label 
+            Text="Buscar Filme"
+            FontSize="22"
+             Padding="50"
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Padding="10">
+            <Label Text="Id Do Filme"
+                   FontSize="18"/>
+            <Editor
+                x:Name="FilmeId"
+                Placeholder="Digite o id do filme "
+                />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Padding="30">
+            <Button
+            Clicked="Buscar"
+            Text="Buscar"/>
+        </HorizontalStackLayout>
+        <Label
+            Text=""
+            x:Name="idFilme "/>
+        <Label
+            Text=""
+            x:Name="nomeFilme "/>
+        <Label
+            Text=""
+            x:Name="duracaoFilme "/>
+        <Label
+            Text=""
+            x:Name="generoFilme "/>
+    </VerticalStackLayout>
+</ContentPage>

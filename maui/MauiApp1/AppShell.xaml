@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1"
+    FlyoutIcon="lua">
+
+    <FlyoutItem Title="inicio">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Todos os filmes">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:TodosOsFilmes}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Adicionar Filme">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:AdicionarFilme}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Buscar Filme">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:BuscarFilme}"/>
+    </FlyoutItem>
+
+
+</Shell>
