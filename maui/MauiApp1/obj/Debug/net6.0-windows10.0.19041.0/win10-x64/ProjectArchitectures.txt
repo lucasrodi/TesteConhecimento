@@ -1,1 +1,1 @@
-C:\Users\lutha\Desktop\Aranha\maui\MauiApp1\MauiApp1.csproj;x64
+C:\Users\lutha\Desktop\Aranha\TesteConhecimento\maui\MauiApp1\MauiApp1.csproj;x64

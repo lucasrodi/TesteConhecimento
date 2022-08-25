@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lutha\\Desktop\\Aranha\\maui\\MauiApp1\\MauiApp1.csproj": {}
+    "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\maui\\MauiApp1\\MauiApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lutha\\Desktop\\Aranha\\maui\\MauiApp1\\MauiApp1.csproj": {
+    "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\maui\\MauiApp1\\MauiApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lutha\\Desktop\\Aranha\\maui\\MauiApp1\\MauiApp1.csproj",
+        "projectUniqueName": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\maui\\MauiApp1\\MauiApp1.csproj",
         "projectName": "MauiApp1",
-        "projectPath": "C:\\Users\\lutha\\Desktop\\Aranha\\maui\\MauiApp1\\MauiApp1.csproj",
+        "projectPath": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\maui\\MauiApp1\\MauiApp1.csproj",
         "packagesPath": "C:\\Users\\lutha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lutha\\Desktop\\Aranha\\maui\\MauiApp1\\obj\\",
+        "outputPath": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\maui\\MauiApp1\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

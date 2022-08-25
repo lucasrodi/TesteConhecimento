@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A3RVn9x86Z6VK+Yfe+r0BUnrZR67LNXzenkBAVaSw1kj3yO7J+njd3AMEf9nAwtj+iiY+1HUc8hivnpFgXtCqA==",
+  "dgSpecHash": "qrxer1xR+xTRXVFyVnqVom6gfbKxiRZmrBvfN3j7YecBhl7OYmyPwPAD9GurB6mNGW1IyRgItbPa9H0DSKdvBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lutha\\Desktop\\Aranha\\maui\\MauiApp1\\MauiApp1.csproj",
+  "projectFilePath": "C:\\Users\\lutha\\Desktop\\Aranha\\TesteConhecimento\\maui\\MauiApp1\\MauiApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lutha\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\lutha\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

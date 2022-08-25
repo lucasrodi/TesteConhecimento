@@ -29,41 +29,48 @@ public partial class TodosOsFilmes : ContentPage
          
     private async void ListaFilme()
     {
-        var filmes = await Buscar();
-       
-
-         foreach (var item in filmes)
+        try
         {
+            var filmes = await Buscar();
 
-            Label labelNome = new Label();
-            Label labelDuracao = new Label();
-            Label labelGenero = new Label();
-            HorizontalStackLayout horizontalLayout = new HorizontalStackLayout();
-            buttonExcluir = new Button();
-            buttonAtualizar = new Button();
-            labelNome.Text = $"Nome: {item.Nome}";
-            labelDuracao.Text = $"Duração: {item.Duracao}";
-            labelGenero.Text = $"Genêro: {item.Genero}";
-            labelNome.FontSize = 20;
-            labelNome.Padding = 10;
-            labelDuracao.FontSize = 20;
-            labelDuracao.Padding = 10;
-            labelGenero.FontSize = 20;
-            labelGenero.Padding = 10;
-            buttonAtualizar.Text = "Atualizar";
-            buttonAtualizar.Clicked += AtualizarFilme;
-            buttonAtualizar.CommandParameter = item.Id;
-            buttonExcluir.Text = "Excluir";
-            buttonExcluir.Clicked += DeletarFilme;
-            buttonExcluir.CommandParameter = item.Id;
-            horizontalLayout.HorizontalOptions = LayoutOptions.Center;
-            horizontalLayout.Children.Add(labelNome);
-            horizontalLayout.Children.Add(labelDuracao);
-            horizontalLayout.Children.Add(labelGenero);
-            horizontalLayout.Children.Add(buttonAtualizar);
-            horizontalLayout.Children.Add(buttonExcluir);
-            verticalLayout.Children.Add(horizontalLayout);
+            foreach (var item in filmes)
+            {
+
+                Label labelNome = new Label();
+                Label labelDuracao = new Label();
+                Label labelGenero = new Label();
+                HorizontalStackLayout horizontalLayout = new HorizontalStackLayout();
+                buttonExcluir = new Button();
+                buttonAtualizar = new Button();
+                labelNome.Text = $"Nome: {item.Nome}";
+                labelDuracao.Text = $"Duração: {item.Duracao}";
+                labelGenero.Text = $"Genêro: {item.Genero}";
+                labelNome.FontSize = 20;
+                labelNome.Padding = 10;
+                labelDuracao.FontSize = 20;
+                labelDuracao.Padding = 10;
+                labelGenero.FontSize = 20;
+                labelGenero.Padding = 10;
+                buttonAtualizar.Text = "Atualizar";
+                buttonAtualizar.Clicked += AtualizarFilme;
+                buttonAtualizar.CommandParameter = item.Id;
+                buttonExcluir.Text = "Excluir";
+                buttonExcluir.Clicked += DeletarFilme;
+                buttonExcluir.CommandParameter = item.Id;
+                horizontalLayout.HorizontalOptions = LayoutOptions.Center;
+                horizontalLayout.Children.Add(labelNome);
+                horizontalLayout.Children.Add(labelDuracao);
+                horizontalLayout.Children.Add(labelGenero);
+                horizontalLayout.Children.Add(buttonAtualizar);
+                horizontalLayout.Children.Add(buttonExcluir);
+                verticalLayout.Children.Add(horizontalLayout);
+            }
         }
+        catch (Exception)
+        {
+            await DisplayAlert("Erro", "Não foi possivel listar os filmes", "OK");
+        }
+       
     }
     private async void AtualizarFilme(object sender, EventArgs args)
     {
@@ -71,14 +78,22 @@ public partial class TodosOsFilmes : ContentPage
     }
     private async void DeletarFilme(object sender,EventArgs args)
     {
-        HttpClient client = new HttpClient();
-        var urlBase = "https://localhost:7241/Api/Filme/RemoveFilme";
-        var id = buttonExcluir.CommandParameter.ToString();
-        var url = $"{urlBase}?Id={id}";
-        HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Delete, url);
+        try
+        {
+            HttpClient client = new HttpClient();
+            var urlBase = "https://localhost:7241/Api/Filme/RemoveFilme";
+            var id = buttonExcluir.CommandParameter.ToString();
+            var url = $"{urlBase}?Id={id}";
+            HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Delete, url);
 
-        await client.SendAsync(message);
-        await Navigation.PushAsync(new TodosOsFilmes());
+            await client.SendAsync(message);
+            await Navigation.PushAsync(new TodosOsFilmes());
+        }
+        catch (Exception)
+        {
+            await DisplayAlert("Erro", "Não Conseguimos deletar o filme", "OK");
+        }
+        
     }
 	private async Task<List<Filme>> Buscar()
 	{
